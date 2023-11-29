@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* calculo para pegar o font-size em cima da tela do usuário assim ficando fiel ao figma independente da tela ao usar rem's */
+  font-size: calc(0.6 * (1.5vh + 1.1vw));
+  /* font-size: 16px; */
+}
+
+h1 {
+  line-height: 29px;
+}
+
+button {
+  transition: 0.2s;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+@layer base {
+  :root {
+    --green-5: #eefff6;
+    --green-15: #b2ffdc;
+
+    --gray-5: #eeeeee;
+
+    --primary: #0d2d4f;
+    --secondary: #0e4a7e;
+
+    --background: #ffffff;
+    --foreground: #f1f8fe;
+
+    --destructive: #b20a0e;
+
+    --disabled: #c4c4c4;
+  }
+}
+
+@layer base {
+  @layer base {
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  body {
+    @apply bg-background;
+  }
+}

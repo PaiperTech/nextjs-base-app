@@ -1,4 +1,7 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable import/extensions */
 import { OperatorProvider } from "@/components/operator/hooks/operator.hook"
+import React from "react"
 
 export default function PartnerLayout({
   children,

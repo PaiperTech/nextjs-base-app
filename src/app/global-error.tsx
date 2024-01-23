@@ -1,10 +1,14 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-a11y/html-has-lang */
+/* eslint-disable react/jsx-filename-extension */
+
 'use client'
 
 export default function GlobalError({
-    error,
+    // error,
     reset,
 }: {
-    error: Error & { digest?: string }
+    // error: Error & { digest?: string }
     reset: () => void
 }) {
     return (

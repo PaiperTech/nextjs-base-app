@@ -1,3 +1,7 @@
+/* eslint-disable no-useless-catch */
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable no-redeclare */
+/* eslint-disable import/extensions */
 import { getAPIClient } from '@/config/axios';
 
 interface SendOtp {

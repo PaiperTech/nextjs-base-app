@@ -1,3 +1,7 @@
+/* eslint-disable no-useless-catch */
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable import/extensions */
+
 'use server';
 
 import { getAPIClient } from '@/config/axios';

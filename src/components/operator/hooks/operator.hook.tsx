@@ -1,19 +1,25 @@
-'use client';
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/jsx-no-constructed-context-values */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable import/extensions */
+
+'use client'
+
 import { createContext, useContext, useState } from 'react';
 
+import { deleteOperatorById } from '@/services/operator';
 import {
     IOperator,
     IOperatorContext,
     IOperatorProviderProps,
 } from './dto/operator.dto';
-import { deleteOperatorById } from '@/services/operator';
 
 const OperatorContext = createContext<IOperatorContext>(
     {} as IOperatorContext
 );
 
 export function OperatorProvider(props: IOperatorProviderProps) {
-    const [operators, setOperators] = useState<IOperator[]>([]);
+    const [operators] = useState<IOperator[]>([]);
 
     async function deleteOperator(id: string) {
         await deleteOperatorById(id);

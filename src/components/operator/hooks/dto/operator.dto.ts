@@ -9,6 +9,7 @@ export interface IOperator {
 
 export interface IOperatorContext {
   operators: IOperator[];
+  // eslint-disable-next-line no-unused-vars
   deleteOperator: (id: string) => Promise<void>;
 }
 

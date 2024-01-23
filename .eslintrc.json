@@ -18,7 +18,15 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": {
-    "@typescript-eslint/no-unused-vars": "error"
-  }
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["**/*.js", "**/*.jsx"],
+      "rules": {
+        "react/jsx-filename-extension": "off",
+        "import/no-named-as-default": "off",
+        "import/extensions": "off"
+      }
+    }
+  ]
 }

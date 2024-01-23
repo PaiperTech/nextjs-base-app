@@ -1,4 +1,4 @@
-import Link from "next/link";
+/* eslint-disable react/jsx-filename-extension */
 
 export default function NotFound() {
     return (

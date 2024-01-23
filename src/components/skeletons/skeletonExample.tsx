@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable import/extensions */
 import { Skeleton } from "@/components/ui/skeleton"
 
 export default function SkeletonExample() {

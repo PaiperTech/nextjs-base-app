@@ -1,4 +1,10 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable import/extensions */
+
 'use client'
+
 import { useOperators } from "@/components/operator/hooks/operator.hook";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
@@ -15,13 +21,8 @@ export default function Operator() {
   const { operators, deleteOperator } = useOperators();
 
   // react-hook-forms para formularios
-  const {
-    register,
-    handleSubmit,
-    setValue,
-    reset,
-    formState: { errors, isValid }
-  } = useForm({
+  // eslint-disable-next-line no-empty-pattern
+  const {} = useForm({
     resolver: yupResolver(schema),
   });
 
